@@ -8,7 +8,7 @@ import.java.lang.Math
 
 
 <br><br>
-1. **Math.abs()**
+### 1. Math.abs()
 - 절댓값으로 반환해준다.
 
 예시 :
@@ -25,7 +25,7 @@ public class Sample {
 
 
 <br><br>
-2. **Math.random()**
+### 2. Math.random()
 - 0.0~1.0사의의 값을 double형인 랜덤값으로 반환한다.
 
 예시 :
@@ -53,7 +53,7 @@ public class Sample {
 
 
 <br><br>
-3. **Math.round(), Math.floor(), Math.ceil()**
+### 3. Math.round(), Math.floor(), Math.ceil()
 
 반올림 : Math.round()
 
@@ -89,7 +89,7 @@ double → long
 
 
 <br><br>
-4. **Math.pow(), Math.sqrt()**
+### 4. Math.pow(), Math.sqrt()
 
 제곱 : Math.pow()
 
