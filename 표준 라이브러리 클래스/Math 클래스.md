@@ -7,7 +7,7 @@ import.java.lang.Math
 → 하지만, 컴파일 시 자동으로 불러오기 때문에 굳이 따로 선언할 필요가 없다.
 
 
-
+<br><br>
 1. **Math.abs()**
 - 절댓값으로 반환해준다.
 
@@ -24,7 +24,7 @@ public class Sample {
 → 전부 **절댓값**으로 반환된다.
 
 
-
+<br><br>
 2. **Math.random()**
 - 0.0~1.0사의의 값을 double형인 랜덤값으로 반환한다.
 
@@ -52,7 +52,7 @@ public class Sample {
 그러면 0.8145 * 10 = 8.145….가 된다. 여기서 강제로 int형으로 변환하면 8만 남게되므로 내가 원하는 0~9사이의 난수가 된다.
 
 
-
+<br><br>
 3. **Math.round(), Math.floor(), Math.ceil()**
 
 반올림 : Math.round()
@@ -88,7 +88,7 @@ double → long
 항상 **double**이므로 소숫점 반환을 주의해야 한다.
 
 
-
+<br><br>
 4. **Math.pow(), Math.sqrt()**
 
 제곱 : Math.pow()
