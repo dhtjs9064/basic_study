@@ -6,16 +6,26 @@ import.java.lang.Math
 
 → 하지만, 컴파일 시 자동으로 불러오기 때문에 굳이 따로 선언할 필요가 없다.
 
+
+
 1. **Math.abs()**
 - 절댓값으로 반환해준다.
 
 예시 :
 
-![image.png](attachment:91f1c91f-234a-413e-aed6-c418bdd9799c:image.png)
+public class Sample {
+    public static void main(String[] args) {
+        System.out.println(Math.abs(-1)); // 1
+        System.out.println(Math.abs(0)); // 0
+        System.out.println(Math.abs(1)); // 1
+    }
+}
 
 → 전부 **절댓값**으로 반환된다.
 
-1. **Math.random()**
+
+
+2. **Math.random()**
 - 0.0~1.0사의의 값을 double형인 랜덤값으로 반환한다.
 
 예시 :
@@ -28,13 +38,21 @@ Math.random();
 
 예시 :
 
-![image.png](attachment:bba4a441-5f0c-463c-8775-99f6eb777b0b:image.png)
+public class Sample {
+    public static void main(String[] args) {
+        System.out.println((int) (Math.random() * 10)); // 0~9
+        System.out.println((int) (Math.random() * 100)); // 0~99
+        System.out.println((int) (Math.random() * 1000)); // 0~999
+    }
+}
 
 원리 : 0.0에서 1.0사이의 값이 나온다고 했으므로 예를들어 0.8145….값이 나왔다고 가정해보자.
 
 그러면 0.8145 * 10 = 8.145….가 된다. 여기서 강제로 int형으로 변환하면 8만 남게되므로 내가 원하는 0~9사이의 난수가 된다.
 
-1. **Math.round(), Math.floor(), Math.ceil()**
+
+
+3. **Math.round(), Math.floor(), Math.ceil()**
 
 반올림 : Math.round()
 
@@ -44,7 +62,13 @@ Math.random();
 
 예시 : 
 
-![image.png](attachment:7dd311c9-a418-4107-a9c4-89fda71cb04d:image.png)
+public class Sample {
+    public static void main(String[] args) {
+        System.out.println(Math.round(5.5341)); // 6
+        System.out.println((int) Math.floor(5.5341)); // 5
+        System.out.println((int) Math.ceil(5.5341)); // 6
+    }
+}
 
 주의 : 
 
@@ -62,7 +86,9 @@ double → long
 
 항상 **double**이므로 소숫점 반환을 주의해야 한다.
 
-1. **Math.pow(), Math.sqrt()**
+
+
+4. **Math.pow(), Math.sqrt()**
 
 제곱 : Math.pow()
 
@@ -70,7 +96,12 @@ double → long
 
 예시 :
 
-![image.png](attachment:b3d123bf-d4a0-4b23-b324-f7e6a1fb837f:image.png)
+public class Sample {
+    public static void main(String[] args) {
+        System.out.println((int) Math.pow(5, 2)); // 25
+        System.out.println((int) Math.sqrt(25)); // 5
+    }
+}
 
 Math.pow(a,b)는 a에 대하여 b만큼 제곱하겠다는 의미다.
 
