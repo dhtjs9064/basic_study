@@ -12,7 +12,7 @@ import.java.lang.Math
 - 절댓값으로 반환해준다.
 
 예시 :
-
+```java
 public class Sample {
     public static void main(String[] args) {
         System.out.println(Math.abs(-1)); // 1
@@ -20,7 +20,7 @@ public class Sample {
         System.out.println(Math.abs(1)); // 1
     }
 }
-
+```
 → 전부 **절댓값**으로 반환된다.
 
 
@@ -38,6 +38,7 @@ Math.random();
 
 예시 :
 
+```java
 public class Sample {
     public static void main(String[] args) {
         System.out.println((int) (Math.random() * 10)); // 0~9
@@ -45,7 +46,7 @@ public class Sample {
         System.out.println((int) (Math.random() * 1000)); // 0~999
     }
 }
-
+```
 원리 : 0.0에서 1.0사이의 값이 나온다고 했으므로 예를들어 0.8145….값이 나왔다고 가정해보자.
 
 그러면 0.8145 * 10 = 8.145….가 된다. 여기서 강제로 int형으로 변환하면 8만 남게되므로 내가 원하는 0~9사이의 난수가 된다.
@@ -61,7 +62,7 @@ public class Sample {
 올림 : Math.ceil()
 
 예시 : 
-
+```java
 public class Sample {
     public static void main(String[] args) {
         System.out.println(Math.round(5.5341)); // 6
@@ -69,7 +70,7 @@ public class Sample {
         System.out.println((int) Math.ceil(5.5341)); // 6
     }
 }
-
+```
 주의 : 
 
 반환타입이 다르다.
@@ -95,14 +96,14 @@ double → long
 제곱근 : Math.sqrt()
 
 예시 :
-
+```java
 public class Sample {
     public static void main(String[] args) {
         System.out.println((int) Math.pow(5, 2)); // 25
         System.out.println((int) Math.sqrt(25)); // 5
     }
 }
-
+```
 Math.pow(a,b)는 a에 대하여 b만큼 제곱하겠다는 의미다.
 
 Math.sqrt(a)는 a의 제곱근을 구하겠다는 의미이다.
