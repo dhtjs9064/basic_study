@@ -1,1 +1,39 @@
+# Entity
 
+## 1. 개념
+- DB 테이블과 1:1로 매핑되는 자바 클래스  
+  즉, **DB 테이블 구조를 자바 클래스로 표현하기 위해** 작성한다.  
+- 클래스의 필드에는 DB테이블의 컬럼을 정의한다.
+ 
+## 2. JPA와의 관계
+- JPA는 **객체와 DB를 자동으로 연결**해주는 프레임워크이다.  
+따라서 Entity를 작성하면 객체를 DB에 저장하거나 꺼낼 때 JPA 덕분에 자동으로 매핑되어 객체를 손쉽게 다룰 수 있게된다.
+
+### +) 만약 Entity 클래스를 작성하지 않는다면?
+- DB를 작업할 일이 있을때마다 직접 SQL문을 작성해야한다.  
+즉, 조회, 수정, 삭제등 모든 작업을 수동으로 처리해야 하기에 번거롭다.
+
+## 3. User 엔티티 예시
+
+```java
+@Entity
+@Table(name = "users")
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
+@Builder
+public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(nullable = false, unique = true)
+    private String email;
+
+    private String password;
+
+    private String nickname;
+
+    private LocalDateTime createdAt = LocalDateTime.now();
+}
